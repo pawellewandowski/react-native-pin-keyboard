@@ -13,7 +13,6 @@ const styles = StyleSheet.create({
         margin: 20,
     },
     btn: {
-        fontFamily: 'Droid Sans Mono',
         fontSize: 50,
         justifyContent: 'center',
         alignItems: 'center',
@@ -27,7 +26,6 @@ const styles = StyleSheet.create({
         fontWeight: '500',
     },
     pin: {
-        fontFamily: 'Droid Sans Mono',
         fontSize: 40,
         fontWeight: '500',
     },
