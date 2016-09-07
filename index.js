@@ -58,7 +58,6 @@ export default class Pin extends Component {
 
         if (value.length == MAX_LENGTH) {
             this.props.onSubmit(value);
-            this.props.onDone();
         }
     }
 
