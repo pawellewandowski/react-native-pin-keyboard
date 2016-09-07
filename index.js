@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
 
 });
 
-const MAX_LENGTH = 6;
+const MAX_LENGTH = 4;
 
 function makeDots(num) {
     let ret = '';
