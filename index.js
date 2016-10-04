@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
         borderRadius: 500
     },
     btnText: {
-        paddingVertical: 15,
+        paddingVertical: 10,
         paddingHorizontal: 25,
         paddingBottom: 20,
         fontSize: 40,
