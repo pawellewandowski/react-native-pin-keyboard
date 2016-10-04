@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 
 const styles = StyleSheet.create({
     row: {
@@ -13,16 +13,19 @@ const styles = StyleSheet.create({
         margin: 20,
     },
     btn: {
-        fontSize: 50,
+
         justifyContent: 'center',
         alignItems: 'center',
         paddingVertical: 10,
         paddingHorizontal: 35,
         textAlign: 'center',
         margin: 10,
-        borderWidth: 1,
+        borderWidth: 3,
         borderColor: '#ddd',
-        borderRadius: 50
+        borderRadius: 150
+    },
+    btnText: {
+        fontSize: 50,
     },
     header: {
         fontSize: 30,
@@ -71,8 +74,10 @@ export default class Pin extends Component {
 
     renderButton(num) {
         return (<View style={styles.btn}>
-            <Text onPress={()=> this.handlePress(num)}>{num}
-            </Text>
+            <TouchableOpacity onPress={()=> this.handlePress(num)}>
+                <Text style={styles.btnText}>{num}
+                </Text>
+            </TouchableOpacity>
         </View>);
     }
 
