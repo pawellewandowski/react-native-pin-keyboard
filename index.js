@@ -20,6 +20,9 @@ const styles = StyleSheet.create({
         paddingHorizontal: 35,
         textAlign: 'center',
         margin: 10,
+        borderWidth: 1,
+        borderColor: '#ddd',
+        borderRadius: 50
     },
     header: {
         fontSize: 30,
@@ -67,9 +70,10 @@ export default class Pin extends Component {
     }
 
     renderButton(num) {
-        return (<Text onPress={()=> this.handlePress(num)}
-                      style={styles.btn}>{num}
-        </Text>);
+        return (<View style={styles.btn}>
+            <Text onPress={()=> this.handlePress(num)}>{num}
+            </Text>
+        </View>);
     }
 
     render() {
@@ -77,34 +81,34 @@ export default class Pin extends Component {
         const marks = value.replace(/./g, ' ● ');
         const dots = makeDots(MAX_LENGTH - value.length);
 
-        return (<View style={styles.pad} >
-            <Text style={styles.header} >
+        return (<View style={styles.pad}>
+            <Text style={styles.header}>
                 Enter pin:
             </Text>
 
-            <View style={styles.row} >
-                <Text style={styles.pin} >{marks}{dots}</Text>
+            <View style={styles.row}>
+                <Text style={styles.pin}>{marks}{dots}</Text>
             </View>
 
-            <View style={styles.row} >
+            <View style={styles.row}>
                 {this.renderButton(1)}
                 {this.renderButton(2)}
                 {this.renderButton(3)}
             </View>
 
-            <View style={styles.row} >
+            <View style={styles.row}>
                 {this.renderButton(4)}
                 {this.renderButton(5)}
                 {this.renderButton(6)}
             </View>
 
-            <View style={styles.row} >
+            <View style={styles.row}>
                 {this.renderButton(7)}
                 {this.renderButton(8)}
                 {this.renderButton(9)}
             </View>
 
-            <View style={styles.row} >
+            <View style={styles.row}>
                 <Text onPress={()=> this.handleClear()} style={styles.btn}>C</Text>
                 {this.renderButton(0)}
                 <Text onPress={()=> this.handleRemove()} style={styles.btn}>{'<'}</Text>
