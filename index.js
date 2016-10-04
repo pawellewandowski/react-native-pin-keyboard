@@ -16,8 +16,8 @@ const styles = StyleSheet.create({
 
         justifyContent: 'center',
         alignItems: 'center',
-        paddingVertical: 10,
-        paddingHorizontal: 35,
+        paddingVertical: 15,
+        paddingHorizontal: 15,
         textAlign: 'center',
         margin: 10,
         borderWidth: 3,
@@ -114,9 +114,19 @@ export default class Pin extends Component {
             </View>
 
             <View style={styles.row}>
-                <Text onPress={()=> this.handleClear()} style={styles.btnText}>C</Text>
+                <View style={styles.btn}>
+                    <TouchableOpacity onPress={()=> this.handleClear()}>
+                        <Text style={styles.btnText}>C
+                        </Text>
+                    </TouchableOpacity>
+                </View>
                 {this.renderButton(0)}
-                <Text onPress={()=> this.handleRemove()} style={styles.btnText}>{'<'}</Text>
+                <View style={styles.btn}>
+                    <TouchableOpacity onPress={()=> this.handleRemove()}>
+                        <Text style={styles.btnText}>{'<'}
+                        </Text>
+                    </TouchableOpacity>
+                </View>
             </View>
         </View>);
     }
