@@ -20,11 +20,12 @@ const styles = StyleSheet.create({
         margin: 10,
         borderWidth: 3,
         borderColor: '#ddd',
-        borderRadius: 150
+        borderRadius: 500
     },
     btnText: {
-        paddingVertical: 15,
+        paddingVertical: 20,
         paddingHorizontal: 15,
+        paddingBottom: 20,
         fontSize: 40,
     },
     header: {
