@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
         borderRadius: 150
     },
     btnText: {
-        fontSize: 50,
+        fontSize: 40,
     },
     header: {
         fontSize: 30,
@@ -114,9 +114,9 @@ export default class Pin extends Component {
             </View>
 
             <View style={styles.row}>
-                <Text onPress={()=> this.handleClear()} style={styles.btn}>C</Text>
+                <Text onPress={()=> this.handleClear()} style={styles.btnText}>C</Text>
                 {this.renderButton(0)}
-                <Text onPress={()=> this.handleRemove()} style={styles.btn}>{'<'}</Text>
+                <Text onPress={()=> this.handleRemove()} style={styles.btnText}>{'<'}</Text>
             </View>
         </View>);
     }
