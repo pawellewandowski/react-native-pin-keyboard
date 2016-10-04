@@ -16,8 +16,6 @@ const styles = StyleSheet.create({
 
         justifyContent: 'center',
         alignItems: 'center',
-        paddingVertical: 15,
-        paddingHorizontal: 15,
         textAlign: 'center',
         margin: 10,
         borderWidth: 3,
@@ -25,6 +23,8 @@ const styles = StyleSheet.create({
         borderRadius: 150
     },
     btnText: {
+        paddingVertical: 15,
+        paddingHorizontal: 15,
         fontSize: 40,
     },
     header: {
