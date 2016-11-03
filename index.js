@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
     pad: {
         flex: 1,
         margin: 20,
-        height:500,
+        height:520,
     },
     btn: {
 
