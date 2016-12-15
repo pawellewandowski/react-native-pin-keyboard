@@ -90,7 +90,7 @@ export default class Pin extends Component {
 
         return (<View style={styles.pad}>
             <Text style={styles.header}>
-                Enter pin:
+                Enter PIN:
             </Text>
 
             <View style={styles.row}>
